@@ -1,1 +1,10 @@
 
+#!/bin/bash
+
+INPUT_SOURCE=$(echo `ibus engine`)
+
+if [[ "${INPUT_SOURCE}" = "libpinyin" ]]; then
+    echo "中"
+else
+    echo "EN"
+fi
